@@ -4,10 +4,7 @@ import tensorflow as tf
 from PIL import Image
 import os
 
-working_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = f"{working_dir}/trained_model/trained_model_mnist.h5"
-
-model = tf.keras.models.load_model(model_path)
+model = tf.keras.models.load_model('trained_model_mnist.h5')
 
 class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat', 'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
 
