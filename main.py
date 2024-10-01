@@ -20,6 +20,8 @@ def process_image(image):
 
 #STREAMLIT CODE
 st.title('Fashion<3')
+st.write("Upload an image here to find output from the given image.")
+st.write(" PLEASE USE 28 * 28 greyscale image as this app does not support normal images due to limited training data")
 
 uploaded_img = st.file_uploader("Upload image ", type= ['jpg','jpeg','png'])
 
